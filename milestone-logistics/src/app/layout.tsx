@@ -12,16 +12,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Milestone Group Logistics",
     description: "Your trusted partner for logistics and transportation.",
-    url: "https://www.milestone.com",
+    url: "https://www.milestone.com", // TODO: Update site URL
     siteName: "Milestone Group Logistics",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Milestone Group Logistics",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
