@@ -15,6 +15,7 @@ export default function Navbar() {
               alt="Milestone Group Logistics"
               width={72}
               height={72}
+              priority
             />
             <span className="font-bold text-2xl md:text-3xl text-gray-900 dark:text-white font-poppins">
               Milestone Group Logistics
