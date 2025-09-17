@@ -9,16 +9,16 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3 flex-shrink-0">
           <Link href="/" className="flex items-center gap-3">
-<div className="w-18 h-18 relative">
-  <Image
-    src="/logo.png"
-    alt="Milestone Group Logistics"
-    fill
-    style={{ objectFit: "contain" }}
-    priority
-    sizes="(max-width: 768px) 48px, 72px"
-  />
-</div>
+            <div className="w-18 h-18 relative">
+              <Image
+                src="/logo.png"
+                alt="Milestone Group Logistics"
+                fill
+                style={{ objectFit: "contain" }}
+                priority
+                sizes="(max-width: 768px) 48px, 72px"
+              />
+            </div>
             <span className="font-bold text-2xl md:text-3xl text-gray-900 dark:text-white font-poppins">
               Milestone Group Logistics
             </span>
