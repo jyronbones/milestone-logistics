@@ -11,6 +11,7 @@ export default function Home() {
             alt="Logistics hero"
             fill
             style={{ objectFit: "cover", opacity: 0.7 }}
+            priority
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white px-6">

@@ -1,6 +1,31 @@
-import './globals.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+export const metadata: Metadata = {
+  title: "Milestone Group Logistics",
+  description: "Trusted logistics, transportation, and supply chain solutions.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Milestone Group Logistics",
+    description: "Your trusted partner for logistics and transportation.",
+    url: "https://www.milestone.com",
+    siteName: "Milestone Group Logistics",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Milestone Group Logistics",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
