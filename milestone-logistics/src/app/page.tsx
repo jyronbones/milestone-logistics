@@ -59,22 +59,22 @@ export default function Home() {
             {
               title: "3PL & Fulfillment",
               desc: "Order processing, packaging and fulfillment for online retailers.",
-              img: "/service-3pl.jpg",
+              img: "/home/service-3pl.jpg",
             },
             {
               title: "Warehousing & Distribution",
               desc: "Secure and scalable storage solutions with strategic locations.",
-              img: "/service-warehouse.jpg",
+              img: "/home/service-warehouse.jpg",
             },
             {
               title: "Inventory Management",
               desc: "Real-time stock visibility and automated replenishment support.",
-              img: "/service-inventory.jpg",
+              img: "/home/service-inventory.jpg",
             },
             {
               title: "Last-Mile Delivery",
               desc: "Fast, reliable delivery to ensure excellent customer experiences.",
-              img: "/service-delivery.jpg",
+              img: "/home/service-delivery.jpg",
             },
           ].map((service) => (
             <div
@@ -135,22 +135,22 @@ export default function Home() {
             {
               title: "Efficiency",
               desc: "Optimized processes to reduce costs and speed deliveries.",
-              img: "/why-efficiency.jpg",
+              img: "/home/why-efficiency.jpg",
             },
             {
               title: "Scalability",
               desc: "Flexible solutions for businesses at every stage.",
-              img: "/why-scalability.jpg",
+              img: "/home/why-scalability.jpg",
             },
             {
               title: "Coverage",
               desc: "Nationwide reach with global shipping options.",
-              img: "/why-coverage.jpg",
+              img: "/home/why-coverage.jpg",
             },
             {
               title: "Partnership",
               desc: "We measure success by your success.",
-              img: "/why-partnership.jpg",
+              img: "/home/why-partnership.jpg",
             },
           ].map((item) => (
             <div
