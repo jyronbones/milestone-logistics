@@ -12,8 +12,8 @@ export default function Navbar() {
     <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-40">
       <div className="w-full flex items-center justify-between px-6 py-2 md:py-4">
 
-        {/* Logo only */}
-        <div className="flex-shrink-0">
+        {/* Logo */}
+        <div className="flex-shrink-0 mx-auto md:mx-0">
           <Link href="/" className="block relative w-48 md:w-64 h-16 md:h-24">
             <Image
               src="/logo.png"
@@ -45,7 +45,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center gap-3">
+        <div className="md:hidden absolute right-6 top-1/2 -translate-y-1/2">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-gray-800 dark:text-gray-200 focus:outline-none"
