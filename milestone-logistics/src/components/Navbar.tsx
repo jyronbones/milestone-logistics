@@ -29,11 +29,11 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6 ml-auto">
           <nav className="flex items-center gap-6 text-sm">
-            <Link href="/" className="hover:text-primary text-gray-800 dark:text-gray-200">Home</Link>
-            <Link href="/about" className="hover:text-primary text-gray-800 dark:text-gray-200">About Us</Link>
-            <Link href="/blogs" className="hover:text-primary text-gray-800 dark:text-gray-200">Blogs</Link>
-            <Link href="/careers" className="hover:text-primary text-gray-800 dark:text-gray-200">Careers</Link>
-            <Link href="/contact" className="hover:text-primary text-gray-800 dark:text-gray-200">Contact</Link>
+            <Link href="/" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Home</Link>
+            <Link href="/about" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">About Us</Link>
+            <Link href="/blogs" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Blogs</Link>
+            <Link href="/careers" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Careers</Link>
+            <Link href="/contact" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Contact</Link>
           </nav>
 
           <Link
@@ -60,11 +60,11 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-700 px-6 py-4 space-y-4">
           <nav className="flex flex-col gap-4 text-sm">
-            <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-primary text-gray-800 dark:text-gray-200">Home</Link>
-            <Link href="/about" onClick={() => setIsOpen(false)} className="hover:text-primary text-gray-800 dark:text-gray-200">About Us</Link>
-            <Link href="/blogs" onClick={() => setIsOpen(false)} className="hover:text-primary text-gray-800 dark:text-gray-200">Blogs</Link>
-            <Link href="/careers" onClick={() => setIsOpen(false)} className="hover:text-primary text-gray-800 dark:text-gray-200">Careers</Link>
-            <Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-primary text-gray-800 dark:text-gray-200">Contact</Link>
+            <Link href="/" onClick={() => setIsOpen(false)} className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Home</Link>
+            <Link href="/about" onClick={() => setIsOpen(false)} className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">About Us</Link>
+            <Link href="/blogs" onClick={() => setIsOpen(false)} className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Blogs</Link>
+            <Link href="/careers" onClick={() => setIsOpen(false)} className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Careers</Link>
+            <Link href="/contact" onClick={() => setIsOpen(false)} className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Contact</Link>
           </nav>
 
           <Link
