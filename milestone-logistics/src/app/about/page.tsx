@@ -1,6 +1,13 @@
 import Image from "next/image";
 
 export default function About() {
+  const coreValues = [
+    { title: "Integrity", description: "We uphold the highest ethical standards in every interaction." },
+    { title: "Innovation", description: "Continuously improving with cutting-edge technology and processes." },
+    { title: "Excellence", description: "Delivering superior results across all aspects of our business." },
+    { title: "Customer-First", description: "Our clients’ success drives every decision we make." },
+  ];
+
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 space-y-24">
 
@@ -54,6 +61,22 @@ export default function About() {
             height={520}
             className="object-cover"
           />
+        </div>
+      </section>
+
+      {/* Core Values Section */}
+      <section className="space-y-12">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white text-center tracking-tight">
+          Our Core Values
+        </h2>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {coreValues.map((value) => (
+            <div key={value.title} className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg text-center transform transition hover:scale-105 hover:shadow-2xl">
+              <div className="text-5xl font-bold text-blue-600 mb-4">{value.title[0]}</div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{value.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm">{value.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
