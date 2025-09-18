@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      {/* Hero Section */}
       <section className="relative">
         <div className="h-96 md:h-[480px] relative bg-gray-800 dark:bg-gray-900">
           <Image
@@ -43,6 +44,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Services Section */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-semibold text-primary text-center dark:text-primary">
           Our Services
@@ -85,43 +87,64 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gray-50 dark:bg-gray-900 py-12">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            Why Choose Milestone
-          </h3>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Efficiency",
-                desc: "Optimized processes to reduce costs and speed deliveries.",
-              },
-              {
-                title: "Scalability",
-                desc: "Flexible solutions for businesses at every stage.",
-              },
-              {
-                title: "Coverage",
-                desc: "Nationwide reach with global shipping options.",
-              },
-              {
-                title: "Partnership",
-                desc: "We measure success by your success.",
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="p-6 bg-white dark:bg-gray-800 rounded shadow transition hover:shadow-lg"
-              >
-                <h4 className="font-semibold text-gray-900 dark:text-white">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
+      {/* Stats / Counters Section */}
+      <section className="bg-gray-50 dark:bg-gray-900 py-16">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div>
+            <h3 className="text-4xl font-bold text-primary">80k+</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Yearly Projects Completed
+            </p>
           </div>
+          <div>
+            <h3 className="text-4xl font-bold text-primary">18k</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Core Carrier & Customer Relationships
+            </p>
+          </div>
+          <div>
+            <h3 className="text-4xl font-bold text-primary">2</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">U.S. Locations</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white text-center">
+          Why Choose Milestone
+        </h3>
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+          {[
+            {
+              title: "Efficiency",
+              desc: "Optimized processes to reduce costs and speed deliveries.",
+            },
+            {
+              title: "Scalability",
+              desc: "Flexible solutions for businesses at every stage.",
+            },
+            {
+              title: "Coverage",
+              desc: "Nationwide reach with global shipping options.",
+            },
+            {
+              title: "Partnership",
+              desc: "We measure success by your success.",
+            },
+          ].map((item) => (
+            <div
+              key={item.title}
+              className="p-6 bg-white dark:bg-gray-800 rounded shadow transition hover:shadow-lg"
+            >
+              <h4 className="font-semibold text-gray-900 dark:text-white">
+                {item.title}
+              </h4>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                {item.desc}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
     </>
