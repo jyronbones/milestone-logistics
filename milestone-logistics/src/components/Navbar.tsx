@@ -10,11 +10,11 @@ export default function Navbar() {
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-40">
-      <div className="w-full flex items-center justify-between px-6 py-2 md:py-4">
+      <div className="w-full flex items-center justify-between px-6 h-16 md:h-24">
 
         {/* Logo */}
-        <div className="flex-shrink-0 mx-auto md:mx-0">
-          <Link href="/" className="block relative w-48 md:w-64 h-16 md:h-24">
+        <div className="flex-shrink-0 mx-auto md:mx-0 h-full">
+          <Link href="/" className="block relative w-48 md:w-64 h-full">
             <Image
               src="/logo.png"
               alt="Milestone Group Logistics"
@@ -27,8 +27,8 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-6 ml-auto">
-          <nav className="flex items-center gap-6 text-sm">
+        <div className="hidden md:flex items-center gap-6 ml-auto h-full">
+          <nav className="flex items-center gap-6 text-sm h-full">
             <Link href="/" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Home</Link>
             <Link href="/about" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">About Us</Link>
             <Link href="/blogs" className="hover:text-primary hover:underline text-gray-800 dark:text-gray-200">Blogs</Link>
