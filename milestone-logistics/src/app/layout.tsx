@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Milestone Group Logistics",
     description: "Your trusted partner for logistics and transportation.",
-    url: "https://www.milestone.com", // TODO: Update site URL
+    url: "https://milestone-logistics.vercel.app/", // TODO: Update site URL
     siteName: "Milestone Group Logistics",
     locale: "en_US",
     type: "website",
