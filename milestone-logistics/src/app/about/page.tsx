@@ -7,18 +7,18 @@ export default function About() {
       {/* Hero Section */}
       <section className="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-            About Milestone Group Logistics
+          <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight">
+            Driving Logistics Forward
           </h1>
           <p className="mt-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
-            Milestone Group Logistics is a full-service 3PL partner helping e-commerce and retail businesses optimize their supply chains.
-            From Shopify merchants to large retailers, we simplify logistics and make them reliable and scalable.
+            Milestone Group Logistics is a premier 3PL partner, helping e-commerce and retail businesses streamline their supply chains.
+            From startups to large-scale retailers, we deliver logistics that are reliable, scalable, and intelligent.
           </p>
         </div>
-        <div className="rounded-xl overflow-hidden shadow-lg">
+        <div className="rounded-xl overflow-hidden shadow-xl">
           <Image
             src="/about/about-hero.jpg"
-            alt="Modern warehouse interior"
+            alt="Modern warehouse interior with logistics activity"
             width={800}
             height={520}
             className="object-cover"
@@ -28,26 +28,28 @@ export default function About() {
 
       {/* Mission & Vision */}
       <section className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="order-2 md:order-1 space-y-8">
+        <div className="order-2 md:order-1 space-y-10">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Our Mission</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+              Our Mission
+            </h2>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mt-2">
-              To deliver world-class logistics solutions that empower businesses to scale with confidence.
-              We are committed to innovation, integrity, and excellence at every step of the supply chain.
+              To revolutionize logistics with cutting-edge technology, efficient operations, and a customer-first approach, enabling businesses to scale effortlessly.
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Our Vision</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+              Our Vision
+            </h2>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mt-2">
-              To be the leading logistics partner globally, recognized for cutting-edge technology, operational excellence,
-              and a relentless focus on customer success.
+              To be the world’s most trusted logistics partner, recognized for innovation, operational excellence, and sustainable growth.
             </p>
           </div>
         </div>
-        <div className="rounded-xl overflow-hidden shadow-lg order-1 md:order-2">
+        <div className="rounded-xl overflow-hidden shadow-xl order-1 md:order-2">
           <Image
             src="/about/warehouse-automation.jpg"
-            alt="Automated warehouse logistics"
+            alt="Automated warehouse logistics with robotics"
             width={800}
             height={520}
             className="object-cover"
@@ -57,8 +59,8 @@ export default function About() {
 
       {/* Modern Workplace / Team Section */}
       <section>
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
-          Our Team & Modern Operations
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white text-center mb-12 tracking-tight">
+          Meet Our Team
         </h2>
         <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
           <div className="rounded-xl overflow-hidden shadow-lg">
@@ -91,13 +93,13 @@ export default function About() {
         </div>
       </section>
 
-      {/* Optional Highlight / Quote Section */}
+      {/* Highlight / Quote Section */}
       <section className="bg-blue-800 text-white py-16 px-6 rounded-xl shadow-lg text-center">
-        <h3 className="text-2xl md:text-3xl font-semibold mb-4">
+        <h3 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
           "Simplifying logistics so your business can scale with confidence."
         </h3>
         <p className="text-lg max-w-2xl mx-auto">
-          Our commitment to technology, automation, and customer-first solutions sets us apart in the logistics industry.
+          Through technology, automation, and customer-first solutions, we set the benchmark in the logistics industry.
         </p>
       </section>
 
