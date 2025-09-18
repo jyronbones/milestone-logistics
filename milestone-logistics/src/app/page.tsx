@@ -58,24 +58,35 @@ export default function Home() {
             {
               title: "3PL & Fulfillment",
               desc: "Order processing, packaging and fulfillment for online retailers.",
+              img: "/service-3pl.jpg",
             },
             {
               title: "Warehousing & Distribution",
               desc: "Secure and scalable storage solutions with strategic locations.",
+              img: "/service-warehouse.jpg",
             },
             {
               title: "Inventory Management",
               desc: "Real-time stock visibility and automated replenishment support.",
+              img: "/service-inventory.jpg",
             },
             {
               title: "Last-Mile Delivery",
               desc: "Fast, reliable delivery to ensure excellent customer experiences.",
+              img: "/service-delivery.jpg",
             },
           ].map((service) => (
             <div
               key={service.title}
-              className="bg-white dark:bg-gray-800 shadow p-6 rounded-md transition hover:shadow-lg"
+              className="bg-white dark:bg-gray-800 shadow p-6 rounded-md transition hover:shadow-lg text-center"
             >
+              <Image
+                src={service.img}
+                alt={service.title}
+                width={80}
+                height={80}
+                className="mx-auto mb-4"
+              />
               <h3 className="font-semibold text-gray-900 dark:text-white">
                 {service.title}
               </h3>
@@ -119,24 +130,35 @@ export default function Home() {
             {
               title: "Efficiency",
               desc: "Optimized processes to reduce costs and speed deliveries.",
+              img: "/why-efficiency.jpg",
             },
             {
               title: "Scalability",
               desc: "Flexible solutions for businesses at every stage.",
+              img: "/why-scalability.jpg",
             },
             {
               title: "Coverage",
               desc: "Nationwide reach with global shipping options.",
+              img: "/why-coverage.jpg",
             },
             {
               title: "Partnership",
               desc: "We measure success by your success.",
+              img: "/why-partnership.jpg",
             },
           ].map((item) => (
             <div
               key={item.title}
               className="p-6 bg-white dark:bg-gray-800 rounded shadow transition hover:shadow-lg"
             >
+              <Image
+                src={item.img}
+                alt={item.title}
+                width={70}
+                height={70}
+                className="mx-auto mb-4"
+              />
               <h4 className="font-semibold text-gray-900 dark:text-white">
                 {item.title}
               </h4>
