@@ -10,18 +10,19 @@ export default function Navbar() {
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-40">
-      <div className="w-full flex items-center justify-between px-6 h-16 md:h-24">
+      <div className="w-full flex items-center justify-between pl-0 pr-6 md:pl-0 md:pr-6 h-16 md:h-24">
 
         {/* Logo */}
-        <div className="flex-shrink-0 mx-auto md:mx-0 h-full">
-          <Link href="/" className="block relative w-48 md:w-64 h-full">
+        <div className="h-full mx-auto md:mx-0 md:ml-0 flex-shrink-0">
+          <Link href="/" className="block h-full">
             <Image
               src="/logo.png"
               alt="Milestone Group Logistics"
-              fill
-              className="object-contain"
+              width={256}
+              height={96}
+              style={{ height: "100%", width: "auto" }}
+              className="object-contain h-full w-auto"
               priority
-              sizes="(max-width: 768px) 192px, 256px"
             />
           </Link>
         </div>
