@@ -25,16 +25,17 @@ export default function Home() {
                 solutions.
               </p>
 
+              {/* Buttons */}
               <div className="mt-6 flex justify-center gap-4">
                 <Link
                   href="/contact"
-                  className="bg-primary text-white px-6 py-3 rounded-lg text-lg shadow-lg transition transform hover:scale-105"
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg text-lg shadow-md transition-colors duration-300 hover:bg-blue-500"
                 >
                   Request a Quote
                 </Link>
                 <Link
                   href="/about"
-                  className="bg-white text-gray-800 px-6 py-3 rounded-lg text-lg shadow-lg transition transform hover:scale-105"
+                  className="bg-gray-100 text-gray-800 px-6 py-3 rounded-lg text-lg shadow-md transition-colors duration-300 hover:bg-gray-400"
                 >
                   Learn More
                 </Link>
