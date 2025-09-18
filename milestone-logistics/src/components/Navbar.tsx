@@ -3,31 +3,26 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-40">
-      <div className="w-full flex items-center justify-between px-6 py-4">
+      <div className="w-full flex items-center justify-between px-6 py-2 md:py-4">
 
-        {/* Logo */}
-        <div className="flex items-center gap-3 flex-shrink-0">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-18 h-18 relative">
-              <Image
-                src="/logo.png"
-                alt="Milestone Group Logistics"
-                fill
-                style={{ objectFit: "contain" }}
-                priority
-                sizes="(max-width: 768px) 48px, 72px"
-              />
-            </div>
-            <span className="font-bold text-2xl md:text-3xl text-gray-900 dark:text-white font-poppins">
-              Milestone Group Logistics
-            </span>
+        {/* Logo only */}
+        <div className="flex-shrink-0">
+          <Link href="/" className="block relative w-48 md:w-64 h-16 md:h-24">
+            <Image
+              src="/logo.png"
+              alt="Milestone Group Logistics"
+              fill
+              className="object-contain"
+              priority
+              sizes="(max-width: 768px) 192px, 256px"
+            />
           </Link>
         </div>
 
