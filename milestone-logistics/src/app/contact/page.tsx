@@ -79,7 +79,7 @@ export default function Contact() {
           Contact Us
         </h1>
         <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg">
-          Tell us about your logistics needs and we&apos;ll get back to you.
+          Tell us about your logistics needs and we&apos;ll get back to you
         </p>
       </section>
 
