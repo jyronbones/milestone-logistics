@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function About() {
   const coreValues = [
-    { title: "Integrity", description: "We uphold the highest ethical standards in every interaction." },
-    { title: "Innovation", description: "Continuously improving with cutting-edge technology and processes." },
-    { title: "Excellence", description: "Delivering superior results across all aspects of our business." },
-    { title: "Customer-First", description: "Our clients&apos; success drives every decision we make." },
+    { title: "Integrity", description: "We uphold the highest ethical standards in every interaction" },
+    { title: "Innovation", description: "Continuously improving with cutting-edge technology and processes" },
+    { title: "Excellence", description: "Delivering superior results across all aspects of our business" },
+    { title: "Customer-First", description: "Our clients&apos; success drives every decision we make" },
   ];
 
   return (

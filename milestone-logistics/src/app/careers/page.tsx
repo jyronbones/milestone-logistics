@@ -36,7 +36,7 @@ export default function Careers() {
           Careers at Milestone
         </h1>
         <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg">
-          Join our team and help shape the future of logistics.
+          Join our team and help shape the future of logistics
         </p>
       </section>
 

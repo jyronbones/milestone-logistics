@@ -22,7 +22,7 @@ export default function Home() {
               <p className="mt-4 text-md md:text-lg max-w-2xl mx-auto text-gray-200">
                 We power e-commerce and retail businesses with reliable 3PL,
                 warehousing, inventory management, and last-mile delivery
-                solutions.
+                solutions
               </p>
 
               {/* Buttons */}
@@ -51,29 +51,29 @@ export default function Home() {
           Our Services
         </h2>
         <p className="text-center text-gray-600 dark:text-gray-300 mt-3 text-lg">
-          End-to-end solutions for e-commerce and retail.
+          End-to-end solutions for e-commerce and retail
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {[
             {
               title: "3PL & Fulfillment",
-              desc: "Order processing, packaging and fulfillment for online retailers.",
+              desc: "Order processing, packaging and fulfillment for online retailers",
               img: "/home/service-3pl.jpg",
             },
             {
               title: "Warehousing & Distribution",
-              desc: "Secure and scalable storage solutions with strategic locations.",
+              desc: "Secure and scalable storage solutions with strategic locations",
               img: "/home/service-warehouse.jpg",
             },
             {
               title: "Inventory Management",
-              desc: "Real-time stock visibility and automated replenishment support.",
+              desc: "Real-time stock visibility and automated replenishment support",
               img: "/home/service-inventory.jpg",
             },
             {
               title: "Last-Mile Delivery",
-              desc: "Fast, reliable delivery to ensure excellent customer experiences.",
+              desc: "Fast, reliable delivery to ensure excellent customer experiences",
               img: "/home/service-delivery.jpg",
             },
           ].map((service) => (
@@ -134,22 +134,22 @@ export default function Home() {
           {[
             {
               title: "Efficiency",
-              desc: "Optimized processes to reduce costs and speed deliveries.",
+              desc: "Optimized processes to reduce costs and speed deliveries",
               img: "/home/why-efficiency.jpg",
             },
             {
               title: "Scalability",
-              desc: "Flexible solutions for businesses at every stage.",
+              desc: "Flexible solutions for businesses at every stage",
               img: "/home/why-scalability.jpg",
             },
             {
               title: "Coverage",
-              desc: "Nationwide reach with global shipping options.",
+              desc: "Nationwide reach with global shipping options",
               img: "/home/why-coverage.jpg",
             },
             {
               title: "Partnership",
-              desc: "We measure success by your success.",
+              desc: "We measure success by your success",
               img: "/home/why-partnership.jpg",
             },
           ].map((item) => (
