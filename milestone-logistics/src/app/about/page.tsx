@@ -5,7 +5,7 @@ export default function About() {
     { title: "Integrity", description: "We uphold the highest ethical standards in every interaction." },
     { title: "Innovation", description: "Continuously improving with cutting-edge technology and processes." },
     { title: "Excellence", description: "Delivering superior results across all aspects of our business." },
-    { title: "Customer-First", description: "Our clients’ success drives every decision we make." },
+    { title: "Customer-First", description: "Our clients&apos; success drives every decision we make." },
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function About() {
               Our Vision
             </h2>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mt-2">
-              To be the world’s most trusted logistics partner, recognized for innovation, operational excellence, and sustainable growth.
+              To be the world&apos;s most trusted logistics partner, recognized for innovation, operational excellence, and sustainable growth.
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function About() {
       {/* Highlight / Quote Section */}
       <section className="bg-blue-800 text-white py-16 px-6 rounded-xl shadow-lg text-center">
         <h3 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-          "Simplifying logistics so your business can scale with confidence."
+          &quot;Simplifying logistics so your business can scale with confidence.&quot;
         </h3>
         <p className="text-lg max-w-2xl mx-auto">
           Through technology, automation, and customer-first solutions, we set the benchmark in the logistics industry.

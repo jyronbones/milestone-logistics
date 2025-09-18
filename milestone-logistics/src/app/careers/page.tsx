@@ -46,10 +46,10 @@ export default function Careers() {
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">Why Work With Us</h3>
             <ul className="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
-              <li>Competitive compensation & benefits</li>
+              <li>Competitive compensation &amp; benefits</li>
               <li>Opportunities for growth and training</li>
               <li>Collaborative and dynamic team environment</li>
-              <li>Focus on innovation & continuous improvement</li>
+              <li>Focus on innovation &amp; continuous improvement</li>
             </ul>
           </div>
         </div>
@@ -84,7 +84,9 @@ export default function Careers() {
           {teamTestimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
               <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4">
-                <p className="text-gray-700 dark:text-gray-300 text-lg italic">"{testimonial.quote}"</p>
+                <p className="text-gray-700 dark:text-gray-300 text-lg italic">
+                  &quot;{testimonial.quote}&quot;
+                </p>
                 <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.role}</p>
               </div>

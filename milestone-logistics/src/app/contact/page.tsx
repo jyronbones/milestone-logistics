@@ -15,7 +15,7 @@ export default function Contact() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" });
-    setSuccess(false); // Reset success on new input
+    setSuccess(false);
   };
 
   const validateForm = () => {
@@ -64,7 +64,7 @@ export default function Contact() {
       } else {
         alert("Something went wrong. Please try again.");
       }
-    } catch (err) {
+    } catch {
       alert("Failed to send message. Please check your connection.");
     } finally {
       setLoading(false);
@@ -79,7 +79,7 @@ export default function Contact() {
           Contact Us
         </h1>
         <p className="mt-4 text-gray-600 dark:text-gray-300 text-lg">
-          Tell us about your logistics needs and we'll get back to you.
+          Tell us about your logistics needs and we&apos;ll get back to you.
         </p>
       </section>
 
