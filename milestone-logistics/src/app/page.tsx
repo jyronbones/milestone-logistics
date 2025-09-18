@@ -16,10 +16,10 @@ export default function Home() {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white px-6">
-              <h1 className="text-3xl md:text-5xl font-bold">
+              <h1 className="text-3xl md:text-5xl font-bold drop-shadow-lg">
                 Smarter Logistics. Seamless Growth.
               </h1>
-              <p className="mt-4 text-md md:text-lg max-w-2xl mx-auto">
+              <p className="mt-4 text-md md:text-lg max-w-2xl mx-auto text-gray-200">
                 We power e-commerce and retail businesses with reliable 3PL,
                 warehousing, inventory management, and last-mile delivery
                 solutions.
@@ -28,13 +28,13 @@ export default function Home() {
               <div className="mt-6 flex justify-center gap-4">
                 <Link
                   href="/contact"
-                  className="bg-white text-gray-800 dark:bg-gray-800 dark:text-white px-6 py-3 rounded-md text-lg shadow transition hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="bg-primary text-white px-6 py-3 rounded-lg text-lg shadow-lg transition transform hover:scale-105"
                 >
                   Request a Quote
                 </Link>
                 <Link
                   href="/about"
-                  className="bg-white text-gray-800 dark:bg-gray-800 dark:text-white px-6 py-3 rounded-md text-lg shadow transition hover:bg-gray-100 dark:hover:bg-gray-700"
+                  className="bg-white text-gray-800 px-6 py-3 rounded-lg text-lg shadow-lg transition transform hover:scale-105"
                 >
                   Learn More
                 </Link>
@@ -45,15 +45,15 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-semibold text-primary text-center dark:text-primary">
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">
           Our Services
         </h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 mt-2">
+        <p className="text-center text-gray-600 dark:text-gray-300 mt-3 text-lg">
           End-to-end solutions for e-commerce and retail.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {[
             {
               title: "3PL & Fulfillment",
@@ -78,54 +78,40 @@ export default function Home() {
           ].map((service) => (
             <div
               key={service.title}
-              className="bg-white dark:bg-gray-800 shadow p-6 rounded-md transition hover:shadow-lg text-center"
+              className="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
             >
-              <Image
-                src={service.img}
-                alt={service.title}
-                width={80}
-                height={80}
-                className="mx-auto mb-4"
-              />
-              <h3 className="font-semibold text-gray-900 dark:text-white">
-                {service.title}
-              </h3>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                {service.desc}
-              </p>
+              {/* Image container with fixed aspect ratio */}
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src={service.img}
+                  alt={service.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
+
+              {/* Overlay text */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 text-white text-left">
+                <h3 className="text-xl font-bold">{service.title}</h3>
+                <p className="mt-2 text-sm text-gray-200">{service.desc}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Stats / Counters Section */}
-      <section className="bg-gray-50 dark:bg-gray-900 py-16">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div>
-            <h3 className="text-4xl font-bold text-primary">80k+</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">
-              Yearly Projects Completed
-            </p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold text-primary">18k</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">
-              Core Carrier & Customer Relationships
-            </p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold text-primary">2</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">U.S. Locations</p>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white text-center">
+      <section className="max-w-7xl mx-auto px-6 py-20">
+        <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white">
           Why Choose Milestone
         </h3>
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+        <p className="text-center text-gray-600 dark:text-gray-300 mt-3 text-lg">
+          The advantages that set us apart.
+        </p>
+
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
             {
               title: "Efficiency",
@@ -150,25 +136,30 @@ export default function Home() {
           ].map((item) => (
             <div
               key={item.title}
-              className="p-6 bg-white dark:bg-gray-800 rounded shadow transition hover:shadow-lg"
+              className="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2"
             >
-              <Image
-                src={item.img}
-                alt={item.title}
-                width={70}
-                height={70}
-                className="mx-auto mb-4"
-              />
-              <h4 className="font-semibold text-gray-900 dark:text-white">
-                {item.title}
-              </h4>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
-                {item.desc}
-              </p>
+              {/* Image container with fixed aspect ratio */}
+              <div className="relative w-full aspect-[4/3]">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
+
+              {/* Overlay text */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6 text-white">
+                <h4 className="text-xl font-semibold">{item.title}</h4>
+                <p className="text-sm text-gray-200 mt-2">{item.desc}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
+
     </>
   );
 }
