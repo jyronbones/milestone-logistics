@@ -102,6 +102,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stats / Counters Section */}
+      <section className="bg-gradient-to-r from-primary to-blue-600 text-white py-20">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <div>
+            <h3 className="text-5xl font-bold">80k+</h3>
+            <p className="mt-2 text-lg">Yearly Projects Completed</p>
+          </div>
+          <div>
+            <h3 className="text-5xl font-bold">18k</h3>
+            <p className="mt-2 text-lg">Core Carrier & Customer Relationships</p>
+          </div>
+          <div>
+            <h3 className="text-5xl font-bold">2</h3>
+            <p className="mt-2 text-lg">U.S. Locations</p>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white">
@@ -159,7 +177,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
     </>
   );
 }
